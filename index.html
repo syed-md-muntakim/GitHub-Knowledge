@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub Knowledge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <button class="icon-btn only-mobile" id="menuBtn" aria-label="Open sections">&#9776;</button>
+    <a class="brand" href="#" id="brand">
+      <svg class="logo" viewBox="0 0 16 16" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z"/></svg>
+      <span>GitHub Knowledge</span>
+    </a>
+    <div class="search">
+      <input id="search" type="search" placeholder="Search sections or commands  ( / )" autocomplete="off" aria-label="Search">
+    </div>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme"></button>
+    <button class="icon-btn only-mobile" id="helpBtn" aria-label="Open help">?</button>
+  </header>
+
+  <div class="layout">
+    <aside class="side left" id="leftBar">
+      <h2>Sections</h2>
+      <nav id="sectionList"></nav>
+    </aside>
+
+    <main class="main" id="main">
+      <div id="content"></div>
+      <p class="empty" id="empty" hidden>No matching sections or commands.</p>
+    </main>
+
+    <aside class="side right" id="rightBar">
+      <h2>Help</h2>
+      <nav id="helpList"></nav>
+    </aside>
+  </div>
+  <div class="scrim" id="scrim"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
